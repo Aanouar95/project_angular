@@ -1,0 +1,14 @@
+<div class="card" style="width: 12rem;">
+    <img src={{itemImgSrc}} alt="" class="card-image-top" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title"><a [title]="itemName">{{itemName}}</a>
+            <span class="badge badge-pill  ml-1" 
+            [ngClass]="{'badge-success' : nbrArticles > 7 , 'badge-warning' : nbrArticles < 7 , 'badge-danger' : nbrArticles == 0 || !nbrArticles }">
+            {{nbrArticles ? nbrArticles : '0'}}</span>
+        </h5>
+        <p class="card-text">{{itemPrice}}</p>
+        <button class="btn btn-success">Add to Cart</button>
+        
+
+    </div>
+</div>

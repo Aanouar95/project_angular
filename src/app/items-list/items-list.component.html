@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row" >
+    <div class="col-12 col-md-4 col-lg-3 p-3" *ngFor="let item of items" >
+        <app-item  [itemName]="item.name" [itemPrice]="item.price"
+        [itemCategory]="item.category" [itemImgSrc]="item.imgSrc" [nbrArticles] = "item.nbrArticles"></app-item>
+    </div>
+  </div>
+
+</div>
+
+
+

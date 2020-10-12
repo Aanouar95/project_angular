@@ -1,0 +1,54 @@
+[
+    {
+        "name":"iphone x",
+        "category":"Smartphones",
+        "price":400
+
+    },     
+    {
+        "name": "iphone xs",
+        "category": "Smartphones",
+        "price":    500
+
+    },
+    {
+        "name":"Tv Samsung LED",
+        "category":"TV",
+        "price":700
+    },
+    {
+        "name":"TV LG QLED",
+        "category":"TV",
+        "price":120
+    },
+    {
+        "name":"TV LG QLED",
+        "category":"TV",
+        "price":120
+    },
+    {
+        "name":"TV LG QLED",
+        "category":"TV",
+        "price":120
+    },
+    {
+        "name":"TV LG QLED",
+        "category":"TV",
+        "price":120
+    },
+    {
+        "name":"TV LG QLED",
+        "category":"TV",
+        "price":120
+    },
+    {
+        "name":"TV LG QLED",
+        "category":"TV",
+        "price":120
+    },
+    {
+        "name":"TV LG QLED",
+        "category":"TV",
+        "price":120
+    }
+]
