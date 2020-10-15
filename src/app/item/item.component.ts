@@ -12,6 +12,7 @@ export class ItemComponent implements OnInit {
   @Input() itemCategory;
   @Input() itemImgSrc;
   @Input() nbrArticles;
+  @Input() id;
 
   constructor() { }
 

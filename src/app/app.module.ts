@@ -6,7 +6,17 @@ import { ItemsListComponent } from './items-list/items-list.component';
 import { ItemComponent } from './item/item.component';
 
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { CollectionsComponent } from './collections/collections.component'; 
+import {Routes} from '@angular/router';
+import {RouterModule} from '@angular/router';
+import { AuthentificationComponent } from './authentification/authentification.component';
+import {SingleAppareilComponent} from './single-appareil/single-appareil.component';
+const appRoutes: Routes = [
+  {path: 'authentification', component: AuthentificationComponent},
+  {path: 'collections', component: ItemsListComponent},
+  {path: '', component: AuthentificationComponent},
+  {path: 'collections/:id', component: SingleAppareilComponent},
+
+];
 
 @NgModule({
   declarations: [
@@ -14,10 +24,12 @@ import { CollectionsComponent } from './collections/collections.component';
     ItemsListComponent,
     ItemComponent,
     NavBarComponent,
-    CollectionsComponent
+    AuthentificationComponent,
+    SingleAppareilComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
